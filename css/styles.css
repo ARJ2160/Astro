@@ -433,6 +433,7 @@
     background-repeat:no-repeat;
     background-size: 75% 90%;
     background-position: center;
+    margin: 5%;
 }
 .top-header, .feedback-body, .bottom-body{
     text-align:center;
@@ -464,7 +465,7 @@
     color: #49d87b;
     font-size:xx-large;
     padding-top: 2rem;
-    padding-bottom: 10rem;
+    padding-bottom: 1rem;
 }
 .bottom-body:hover{
     color: #49d87b;
