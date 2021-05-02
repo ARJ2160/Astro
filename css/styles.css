@@ -1,0 +1,630 @@
+/* --------------------------------------------------- Body Tags ------------------------------------------------------ */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* --------------------------------------------------- Container 1 ------------------------------------------------------ */
+#container1{
+    position: relative;
+    background-image: url(../images/test.jpg);
+    background-repeat:no-repeat;
+    background-size: 70% 100%;
+    background-position:right;
+}
+.header{
+    text-align: left;
+    padding: 10%;
+}
+.title-name{
+    position: absolute;
+    top: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight:700;
+    padding-bottom: 1rem;
+}
+.title-name:hover{
+    color: black;
+}
+.C1headings{
+    margin:10% auto;
+}
+.icon{
+    color:  #49d87b;
+}
+.head{
+    padding: 5% 0 7%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.part1{
+    font-size: 4.2rem;
+    font-weight:750;
+    line-height: 1rem;
+}
+.part2{
+    padding: 5% 0 5%;
+    font-size: 4rem;
+    font-weight:bold;
+}
+.tag-line{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.more-about-us{
+    width: 12rem;
+    height: 5rem;
+    border-color: grey;
+    border-radius: 5em;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    font-weight:600;
+}
+.more-about-us:hover{
+    background-color: #49d87b;
+    color: #fff;
+    box-shadow: 0 0 50px #49d87b;
+}
+.Explore{
+    height: 10%;
+    width: auto;
+    background-color: #49d87b;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    bottom: 8rem;
+}
+.Explore:hover{
+    color: #111;
+    box-shadow: 0 0 10px #49d87b;
+    transition-delay: 0.1s;
+}
+.n-bar{
+    position:absolute;
+    top: 2rem;
+    left: 2px;
+    margin: 2rem;
+}
+.sidebar{
+    position:absolute;
+    left: 2px;
+    bottom: 9rem;
+}
+.s-icon{
+    margin: 2rem;
+    display: block;
+    color:black;
+}
+@media (max-width: 1100px){
+    #container1{
+        background-size: cover;
+    }
+    .C1headings{
+        color:black;
+    }
+    .part1{
+        font-size: 3.8rem;
+        line-height: 0.5rem; 
+    }
+    .part2{
+        font-weight: bolder;
+        font-size: 3.4rem;
+    }
+    .tag-line{
+        font-weight: bolder;
+        color: #fff;
+    }
+    .more-about-us{
+        background-color: black;
+        color: #fff;
+        padding: 0;
+    }
+    .Explore{
+        bottom: 3rem;
+    }
+    .s-icon{
+        color: #fff;
+    }
+}
+/* --------------------------------------------------- Container 2 ------------------------------------------------------ */
+#features{
+    position: relative;
+    text-align: center;
+    padding-top: 9%;
+}
+.feat{
+    color: grey;
+}
+.c2head{
+    padding: 2rem;
+    font-size: 3.5rem;
+    font-weight:bold;
+    line-height: 4rem;
+}
+.c2sub-head{
+    font-size: 2.6rem;
+    font-weight:bold;
+    line-height: 0.5rem;
+}
+.services{
+    padding: 10%;
+}
+.feature-icon{
+    margin-bottom: 3rem;
+}
+.feature-title{
+    padding: 0.4rem;
+    font-size: 1.1rem;
+}
+.Caption{
+    color: black;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.bottom-arrow{
+    font-size:xx-large;
+}
+/* --------------------------------------------------- Container 3 ------------------------------------------------------ */
+#about{
+    margin: 5%;
+    padding: 5%;
+    position:relative;
+}
+.flex-container1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.img-wrapper{
+    flex-basis: 50%;
+}
+.text-wrapper{
+    flex-basis: 50%;
+    padding-top: 8rem;
+}
+.green-sq{
+    height: 150px;
+    width: 150px;
+    background: rgb(15,154,202);
+    background: -moz-linear-gradient(130deg, rgba(15,154,202,1) 31%, rgba(73,216,123,1) 62%);
+    background: -webkit-linear-gradient(130deg, rgba(15,154,202,1) 31%, rgba(73,216,123,1) 62%);
+    background: linear-gradient(130deg, rgba(15,154,202,1) 31%, rgba(73,216,123,1) 62%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f9aca",endColorstr="#49d87b",GradientType=1);
+    border-radius: 7px;
+    position:absolute;
+    z-index: 1;
+}
+.c3img1{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index:0;
+    left: 5rem;
+    top: 5rem;
+}
+.title1{
+    font-weight:bolder;
+    font-size: 3.2rem;
+    padding-top:1.5rem;
+}
+.sub-tags{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    padding-bottom:1.5rem;
+}
+.tag{ 
+    padding-bottom: 1.5rem;
+}
+.description{
+    color: grey;
+    font-size: 1.3rem;
+}
+.more-details{
+    border-color: #49d87b;
+    color: #49d87b;
+    border-radius: 3rem;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+.more-details:hover{
+    color: #49d87b;
+    background-color: black;
+}
+@media screen and (max-width: 1350px){
+    .flex-container1{
+        display: inline;
+    }
+    .green-sq{
+        display: none;
+    }
+    .c3img1{
+        position: static;
+        width: 55%;
+        height: auto;
+    }
+    .text-wrapper{
+        padding-top: 3rem;
+    }
+}
+/* --------------------------------------------------- Container 4 ------------------------------------------------------ */
+#our-services{
+    margin: 7%;
+}
+.text-wrap{
+    font-weight:bolder;
+    float:left;
+}
+.place-holder{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+.services-include{
+    font-size: 3.2rem;
+    padding: 2rem 0 2rem 0;
+}
+.all-services{
+    border-color: #49d87b;
+    color: #49d87b;
+    border-radius: 3rem;
+    padding: 0.8rem 2rem;
+    margin: 2rem 0 3rem 0;
+}
+.all-services:hover{
+    color: #49d87b;
+    background-color: black;
+}
+.card-cont{
+    float: right;
+    margin-right: 5%;
+}
+.box-wrapper1{
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-icon{
+    margin: 2rem 0 2rem 2rem;
+}
+.card-icon1{
+    color: #fff;
+}
+.card-icon2{
+    color: #07a2fc;
+}
+.card-icon3{
+    color: #f12409c9;
+}
+.card-icon4{
+    color: #e6ff02;
+}
+.card{
+    height: 350px;
+}
+.card-title{
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.card1{
+    margin-right: 3rem;
+    background-image: linear-gradient(to right bottom, #14d25b, #27d463, #34d56c, #3fd773, #49d87b);
+    color: #fff;
+    position: relative;
+    top: 5rem;
+}
+.card4{
+    margin-top: 3rem;
+}
+.card3{
+    margin-right: 3rem;     
+    top: 8rem;
+}
+.clear{
+    clear: both;
+}
+@media (max-width: 800px){
+    .card-cont{
+        float: none;
+    }
+    .text-wrap{
+        float: none;
+        text-align: center;
+    }
+    .box-wrapper1{
+        display: block;
+        justify-content: space-around;
+    }
+    .card1{
+        top: 0rem;
+    }
+    .card3{
+        top: 0rem;
+    }
+    .card2, .card4, .card3{
+        margin-top: 3rem;
+    }
+}
+/* --------------------------------------------------- Container 5 ------------------------------------------------------ */
+#project-gallery{
+    position: relative;
+    margin: 2%;
+    padding: 3%;
+}
+.text{
+    padding: 1rem 0 6rem 0;
+    font-weight:bolder;
+    text-align: center;
+}
+.gallery-head{ 
+    font-weight:bolder;
+    font-size: 3.2rem;
+}
+.pro{
+    display: inline-block;
+}
+.view-gallery{
+    display: inline-block;
+    position:absolute;
+    right:0;
+    border-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+    border-radius: 35px;
+}
+.view-gallery:hover{
+    background-color: black;
+    color:#fff;
+}
+@media (max-width: 750px){
+    .view-gallery{
+        position: absolute;
+        top: 7%;
+        left: 35%;
+    }
+}
+.outer{
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-image{
+    background-color: black;
+    width: 370px;
+    height: 500px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    background-size:cover;
+}
+.cards .c5img1{
+    background-image: url("../images/c5img1.jpg");
+    background-position: center;
+}
+.cards .c5img2{
+    background-image: url("../images/c5img2.jpg");
+    background-position: center;
+}
+.cards .c5img3{
+    background-image: url("../images/c5img3.jpg");
+    background-position: center;
+}
+.cards .c5img4{
+    background-image: url("../images/c5img4.jpg");
+    background-position: center;
+}
+/* --------------------------------------------------- Container 6 ------------------------------------------------------ */
+#feedback{
+    background-image: url(../images/c6back.jpg);
+    background-repeat:no-repeat;
+    background-size: 75% 90%;
+    background-position: center;
+}
+.top-header, .feedback-body, .bottom-body{
+    text-align:center;
+}
+.client-feedback{
+    font-size: 3.2rem;
+    font-weight:bolder;
+}
+.about-us{
+    font-size: 700;
+    font-weight: lighter;
+    padding-bottom: 5rem;
+}
+.testimonials{
+    font-family: 'Lato', sans-serif;
+    padding: 1rem 0 2rem 0;
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.name{
+    padding-top: 3rem;
+}
+.quotes{
+    color: #49d87b;
+    margin: 3rem;
+}
+.bottom-body{
+    color: #49d87b;
+    font-size:xx-large;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+.bottom-body:hover{
+    color: #49d87b;
+}
+@media (max-width: 1150px){
+    #feedback{
+        background-image: none;
+    }
+}
+/* --------------------------------------------------- Container 7 ------------------------------------------------------ */
+#blog{
+    margin: 5%;
+}
+.top-body{
+    text-align:center; 
+    font-weight: lighter;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+}
+.our-blog{
+    font-size:1.1em;
+    font-weight: 900;
+}
+.news-cards{
+    margin: auto 15% auto 15%;
+}
+.company-news{
+   font-size: 3.2rem;
+}
+.c7-card1, .c7-card2, .c7-card3{
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.c7-card1{
+    background-image: linear-gradient(to right bottom, #14d25b, #27d463, #34d56c, #3fd773, #49d87b);
+    color: #fff;
+}
+.arr-btn{
+    font-size: 2rem;
+    padding-top: 0.2rem;
+}
+.card2-img{
+    border-radius: 70%;
+    width: 80px;
+    height: 80px;
+}
+.name{
+    font-size: 1.4rem;
+}
+.card-head{
+    display: inline-block;
+}
+.card-subhead{
+    font-size: 1.5rem;
+}
+/* --------------------------------------------------- Container 8 ------------------------------------------------------ */
+#contact-form{
+    margin: 10%;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+.form .txt-field{
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+.contact-info{
+    flex-basis: 50%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+.contact{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.e-mail, .web-site{
+    margin-bottom: 10%;
+}
+.c8-head{
+    font-size: 3.2rem;
+    line-height: 5rem;
+}
+.green-line{
+    border-top-style: dotted;
+    border-width: 10px;
+    width: 10%;
+    color: rgb(0, 255, 0);
+}
+.send-request{
+    background-color: #49d87b;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    margin-top: 3rem;
+}
+/* --------------------------------------------------- Container 9 ------------------------------------------------------ */
+#contact-us{
+    text-align:center;
+    background-color: #d5e2ed;
+}
+.project{
+    font-size: 5rem;
+    padding: 3rem 0 1rem 0;
+}
+.contact-subtext{
+    font-size: 3.5rem;
+    font-weight:lighter;
+}
+.contact-button{
+    border-color:#49d87b;
+    background-color: #fff;
+    color:#49d87b;
+    border-radius: 35px;
+    padding: 1rem 4rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+/* --------------------------------------------------- Container 10 ------------------------------------------------------ */
+#footer{
+    margin: 5%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.feature-table{
+    font-size: 1.5rem;
+    font-weight:lighter;
+}
+.table-heading{
+    padding-bottom: 2rem;
+}
+.social{
+    display: inline-block;
+    color:black;
+    margin: 2rem;
+}
+.footer-comp-name{
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight:700;
+    margin-bottom: 7rem;
+}
+.copyright{
+    margin-top: 10rem;
+}
