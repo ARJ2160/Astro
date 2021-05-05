@@ -15,6 +15,7 @@
     background-repeat:no-repeat;
     background-size: 70% 100%;
     background-position:right;
+    width: 100%;
 }
 .header{
     text-align: left;
@@ -44,13 +45,13 @@
     font-weight: 600;
 }
 .part1{
-    font-size: 4.2rem;
+    font-size: 4vw;
     font-weight:750;
     line-height: 1rem;
 }
 .part2{
     padding: 5% 0 5%;
-    font-size: 4rem;
+    font-size: 2vw;
     font-weight:bold;
 }
 .tag-line{
@@ -59,12 +60,9 @@
     font-weight: 900;
 }
 .more-about-us{
-    width: 12rem;
-    height: 5rem;
     border-color: grey;
     border-radius: 5em;
     font-size: 1rem;
-    margin-top: 0.2rem;
     font-weight:600;
 }
 .more-about-us:hover{
@@ -72,9 +70,10 @@
     color: #fff;
     box-shadow: 0 0 50px #49d87b;
 }
+.btn-cont{
+    display: flex;
+}
 .Explore{
-    height: 10%;
-    width: auto;
     background-color: #49d87b;
     color: #fff;
     position: absolute;
@@ -109,22 +108,25 @@
     .C1headings{
         color:black;
     }
+    .head{
+        font-size: 0.5rem;
+    }
     .part1{
-        font-size: 3.8rem;
+        font-size: 6vw;
         line-height: 0.5rem; 
     }
     .part2{
         font-weight: bolder;
-        font-size: 3.4rem;
+        font-size: 1.5rem;
     }
     .tag-line{
         font-weight: bolder;
+        font-size: 0.7rem;
         color: #fff;
     }
     .more-about-us{
         background-color: black;
         color: #fff;
-        padding: 0;
     }
     .Explore{
         bottom: 3rem;
@@ -138,6 +140,7 @@
     position: relative;
     text-align: center;
     padding-top: 9%;
+    width: 100%;
 }
 .feat{
     color: grey;
@@ -171,11 +174,21 @@
 .bottom-arrow{
     font-size:xx-large;
 }
+@media (max-width: 1100px){
+    .c2head{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .c2sub-head{
+        font-size: 1.5rem;
+    }
+}
 /* --------------------------------------------------- Container 3 ------------------------------------------------------ */
 #about{
     margin: 5%;
     padding: 5%;
     position:relative;
+    width: 100%;
 }
 .flex-container1{
     width: 100%;
@@ -433,7 +446,7 @@
     background-repeat:no-repeat;
     background-size: 75% 90%;
     background-position: center;
-    margin: 5%;
+    width: 100%;
 }
 .top-header, .feedback-body, .bottom-body{
     text-align:center;
@@ -477,6 +490,7 @@
 }
 /* --------------------------------------------------- Container 7 ------------------------------------------------------ */
 #blog{
+    width: 100%;
     margin: 5%;
 }
 .top-body{
@@ -523,11 +537,13 @@
 }
 /* --------------------------------------------------- Container 8 ------------------------------------------------------ */
 #contact-form{
+    /* width: 100%; */
     margin: 10%;
 }
 .flex-container{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .form{
     flex-basis: 50%;
@@ -538,7 +554,7 @@
     margin: 30px 0;
 }
 .txt-field input{
-    width: 100%;
+    width: 80%;
     padding: 0 5px;
     height: 40px;
     font-size: 1rem;
@@ -559,8 +575,8 @@
     margin-bottom: 10%;
 }
 .c8-head{
-    font-size: 3.2rem;
-    line-height: 5rem;
+    font-size: 3vw;
+    line-height: 5vw;
 }
 .green-line{
     border-top-style: dotted;
@@ -575,13 +591,28 @@
     border-radius: 30px;
     margin-top: 3rem;
 }
+@media (max-width: 850px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .contact-info{
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .c8-head{
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+}
 /* --------------------------------------------------- Container 9 ------------------------------------------------------ */
 #contact-us{
     text-align:center;
+    width: 100%;
+    margin-bottom: 10rem;
     background-color: #d5e2ed;
 }
 .project{
-    font-size: 5rem;
+    font-size: 5vw;
     padding: 3rem 0 1rem 0;
 }
 .contact-subtext{
@@ -595,7 +626,16 @@
     border-radius: 35px;
     padding: 1rem 4rem;
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
+}
+@media( max-width: 850px){
+    .project{
+        font-size: 3rem;
+    }
+    .contact-subtext{
+        font-size: 2rem;
+    }
+    .contact-button{}
 }
 /* --------------------------------------------------- Container 10 ------------------------------------------------------ */
 #footer{
@@ -605,19 +645,8 @@
 }
 .flex-footer{
     display: flex;
-    justify-content: space-between;
-}
-.feature-table{
-    font-size: 1.5rem;
-    font-weight:lighter;
-}
-.table-heading{
-    padding-bottom: 2rem;
-}
-.social{
-    display: inline-block;
-    color:black;
-    margin: 2rem;
+    justify-content: center;
+    flex-direction: row;
 }
 .footer-comp-name{
     color: black;
@@ -626,6 +655,31 @@
     font-weight:700;
     margin-bottom: 7rem;
 }
+.left-details{
+    flex-basis: 25%;
+}
+.feature-table{
+    font-size: 1.5rem;
+    font-weight:lighter;
+    flex-basis: 12.5%;
+}
+.table-heading{
+    padding-bottom: 2rem;
+}
+.right-details{
+    flex-basis: 25%;
+}
+.social{
+    display: inline-block;
+    color:black;
+    margin: 1rem;
+}
 .copyright{
     margin-top: 10rem;
+}
+@media (max-width: 850px){
+    .flex-footer{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
