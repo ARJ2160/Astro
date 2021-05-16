@@ -108,20 +108,17 @@
     .C1headings{
         color:black;
     }
-    .head{
-        font-size: 0.5rem;
-    }
     .part1{
         font-size: 6vw;
         line-height: 0.5rem; 
     }
     .part2{
         font-weight: bolder;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .tag-line{
         font-weight: bolder;
-        font-size: 0.7rem;
+        font-size: 1.5rem;
         color: #fff;
     }
     .more-about-us{
@@ -133,6 +130,9 @@
     }
     .s-icon{
         color: #fff;
+    }
+    .sidebar{
+        display: none;
     }
 }
 /* --------------------------------------------------- Container 2 ------------------------------------------------------ */
